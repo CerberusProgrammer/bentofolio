@@ -1,10 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card/index.astro";
-import IntroCard from "../components/IntroCard.astro";
-import ContactsCard from "../components/ContactsCard.astro";
-import Experience from "../components/Experience.astro";
-import Now from "../components/Now.astro";
 ---
 
 <script>
@@ -39,11 +35,46 @@ import Now from "../components/Now.astro";
         <Card
             colSpan="lg:col-span-1"
             rowSpan="md:row-span-1"
-            title="Volver al inicio"
+            title="Inicio"
             href="/"
         />
-        <Card colSpan="lg:col-span-4" rowSpan="md:row-span-4" title="Time zone">
-            <p>Hola</p>
-        </Card>
+        <Card
+            colSpan="lg:col-span-2"
+            rowSpan="md:row-span-2"
+            title="RocketGPT"
+            body="Proyecto con Flutter donde diseñe la arquitectura e interfaz grafica de la aplicacion que consiste en una aplicacion que permita comunicarse con un PLC con lengua natural."
+        />
+        <Card
+            colSpan="lg:col-span-1"
+            rowSpan="md:row-span-3"
+            title="RI Estadisticas"
+            body="Pagina web en hecha Astro donde se visualiza las estadisticas de la planta de produccion en tiempo real y con tracking inteligente de piezas."
+        />
+        <Card
+            colSpan="lg:col-span-1"
+            rowSpan="md:row-span-3"
+            title="RI Produccion"
+            body="Aplicacion web en Flutter multinivel de roles para el control completo en tiempo real de las piezas que pasa por la fase de diseño hasta la inspeccion de calidad."
+        />
+        <Card
+            colSpan="lg:col-span-2"
+            rowSpan="md:row-span-2"
+            title="RI Compras"
+            body="Aplicacion web en Flutter multinivel de roles para el control completo en tiempo real de las piezas que pasa por la fase de diseño hasta la inspeccion de calidad."
+        />
+        <Card
+            colSpan="lg:col-span-1"
+            rowSpan="md:row-span-3"
+            title="Inspire Me"
+            body="Una aplicacion desarrollada para la motivacion a personas que deseen tener frases diarias y puedan conservar sus favoritas."
+            href="https://play.google.com/store/apps/details?id=com.sazarcode.inspire_me"
+        />
+        <Card
+            colSpan="lg:col-span-3"
+            rowSpan="md:row-span-2"
+            title="Nutriplato"
+            body="Diseñada para aprender sobre el Plato del Buen comer y desarrollar un sentido de aprendizaje a la nutricion para todo el mundo y con visualizacion de alimentos con sus datos mas relevantes."
+            href="https://play.google.com/store/apps/details?id=com.sazarcode.nutriplato"
+        />
     </main>
 </Layout>
