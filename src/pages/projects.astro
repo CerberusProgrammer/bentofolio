@@ -4,110 +4,114 @@ import Card from "../components/Card/index.astro";
 ---
 
 <script>
-    import { stagger, spring, timeline, type TimelineDefinition } from "motion";
-    import { loaderAnimation } from "../lib/constants";
-    const cards = document.querySelectorAll(".card");
+  import { stagger, spring, timeline, type TimelineDefinition } from "motion";
+  import { loaderAnimation } from "../lib/constants";
+  const cards = document.querySelectorAll(".card");
 
-    const sequence = [
-        loaderAnimation,
-        [
-            cards,
-            { y: ["40%", "0%"], opacity: [0, 1] },
-            {
-                at: "-0.1",
-                duration: 0.4,
-                delay: stagger(0.3),
-                easing: spring({ velocity: 100, stiffness: 50, damping: 10 }),
-            },
-        ],
-    ];
+  const sequence = [
+    loaderAnimation,
+    [
+      cards,
+      { y: ["40%", "0%"], opacity: [0, 1] },
+      {
+        at: "-0.1",
+        duration: 0.4,
+        delay: stagger(0.3),
+        easing: spring({ velocity: 100, stiffness: 50, damping: 10 }),
+      },
+    ],
+  ];
 
-    timeline(sequence as TimelineDefinition);
+  timeline(sequence as TimelineDefinition);
 </script>
 
 <Layout
-    title="Omar Flores - Software Developer"
-    description="Software developer with strong focus on the user experience animations and micro interactions"
+  title="Omar Flores - Software Developer"
+  description="Software developer with strong focus on the user experience animations and micro interactions"
 >
-    <main
-        class="text-white m-auto p-2 grid gap-2 max-w-6xl overflow-hidden relative w-full sm:p-4 sm:gap-2 md:grid-cols-2 md:gap-3 md:p-6 lg:h-screen lg:grid-rows-8 lg:grid-cols-4 lg:gap-4 lg:max-h-[800px]"
-    >
-        <Card
-            colSpan="lg:col-span-1"
-            rowSpan="md:row-span-1"
-            title="Inicio"
-            href="/"
-        />
-        <Card
-            colSpan="lg:col-span-2"
-            rowSpan="md:row-span-2"
-            title="RocketGPT"
-            body="Proyecto con Flutter donde diseñe la arquitectura e interfaz grafica de la aplicacion que consiste en una aplicacion que permita comunicarse con un PLC con lengua natural."
-        />
-        <Card
-            colSpan="lg:col-span-1"
-            rowSpan="md:row-span-3"
-            title="RI Estadisticas"
-            body="Pagina web en hecha Astro donde se visualiza las estadisticas de la planta de produccion en tiempo real y con tracking inteligente de piezas."
-        />
-        <Card
-            colSpan="lg:col-span-1"
-            rowSpan="md:row-span-3"
-            title="RI Produccion"
-            body="Aplicacion web en Flutter multinivel de roles para el control completo en tiempo real de las piezas que pasa por la fase de diseño hasta la inspeccion de calidad."
-        />
-        <Card
-            colSpan="lg:col-span-2"
-            rowSpan="md:row-span-2"
-            title="RI Compras"
-            body="Aplicacion web en Flutter multinivel de roles para el control completo en tiempo real de las piezas que pasa por la fase de diseño hasta la inspeccion de calidad."
-        />
-        <Card
-            colSpan="lg:col-span-1"
-            rowSpan="md:row-span-3"
-            title="Inspire Me"
-            body="Una aplicacion desarrollada para la motivacion a personas que deseen tener frases diarias y puedan conservar sus favoritas."
-            href="https://play.google.com/store/apps/details?id=com.sazarcode.inspire_me"
-        />
-        <Card
-            colSpan="lg:col-span-3"
-            rowSpan="md:row-span-2"
-            title="Nutriplato"
-            body="Diseñada para aprender sobre el Plato del Buen comer y desarrollar un sentido de aprendizaje a la nutricion para todo el mundo y con visualizacion de alimentos con sus datos mas relevantes."
-            href="https://play.google.com/store/apps/details?id=com.sazarcode.nutriplato"
-        />
-        <Card
-            colSpan="lg:col-span-1"
-            rowSpan="md:row-span-1"
-            title="GuitarLA"
-            href="https://sazarguitarla.netlify.app/"
-        />
-        <Card
-            colSpan="lg:col-span-1"
-            rowSpan="md:row-span-1"
-            title="AstroType"
-            href="https://astrotype.netlify.app/"
-        />
-        <Card
-            colSpan="lg:col-span-1"
-            rowSpan="md:row-span-1"
-            title="What to Do?"
-            href="https://github.com/CerberusProgrammer/what_to_do"
-        />
-        <Card
-            colSpan="lg:col-span-1"
-            rowSpan="md:row-span-1"
-            title="Mini Store"
-            href="https://github.com/CerberusProgrammer/mini_store"
-        />
-        <Card
-            colSpan="lg:col-span-4"
-            rowSpan="md:row-span-2"
-            title="GMTrips"
-            body="Web App con autenticacion y API para generar costo de rutas en Baja California."
-            href="https://gmtrips.netlify.app/"
-        />
-
-
-    </main>
+  <main
+    class="text-white m-auto p-2 grid gap-2 max-w-6xl overflow-hidden relative w-full sm:p-4 sm:gap-2 md:grid-cols-2 md:gap-3 md:p-6 lg:h-screen lg:grid-rows-8 lg:grid-cols-4 lg:gap-4 lg:max-h-[800px]"
+  >
+    <Card
+      colSpan="lg:col-span-1"
+      rowSpan="md:row-span-1"
+      title="Inicio"
+      href="/"
+    />
+    <Card
+      colSpan="lg:col-span-2"
+      rowSpan="md:row-span-2"
+      title="RocketGPT"
+      body="Proyecto con Flutter donde diseñe la arquitectura e interfaz grafica de la aplicacion que consiste en una aplicacion que permita comunicarse con un PLC con lengua natural."
+    />
+    <Card
+      colSpan="lg:col-span-1"
+      rowSpan="md:row-span-3"
+      title="RI Estadisticas"
+      body="Pagina web en hecha Astro donde se visualiza las estadisticas de la planta de produccion en tiempo real y con tracking inteligente de piezas."
+    />
+    <Card
+      colSpan="lg:col-span-1"
+      rowSpan="md:row-span-3"
+      title="RI Produccion"
+      body="Aplicacion web en Flutter multinivel de roles para el control completo en tiempo real de las piezas que pasa por la fase de diseño hasta la inspeccion de calidad."
+    />
+    <Card
+      colSpan="lg:col-span-2"
+      rowSpan="md:row-span-2"
+      title="RI Compras"
+      body="Aplicacion web en Flutter multinivel de roles para el control completo en tiempo real de las piezas que pasa por la fase de diseño hasta la inspeccion de calidad."
+    />
+    <Card
+      colSpan="lg:col-span-1"
+      rowSpan="md:row-span-3"
+      title="Inspire Me"
+      body="Una aplicacion desarrollada para la motivacion a personas que deseen tener frases diarias y puedan conservar sus favoritas."
+      href="https://play.google.com/store/apps/details?id=com.sazarcode.inspire_me"
+    />
+    <Card
+      colSpan="lg:col-span-3"
+      rowSpan="md:row-span-2"
+      title="Nutriplato"
+      body="Diseñada para aprender sobre el Plato del Buen comer y desarrollar un sentido de aprendizaje a la nutricion para todo el mundo y con visualizacion de alimentos con sus datos mas relevantes."
+      href="https://play.google.com/store/apps/details?id=com.sazarcode.nutriplato"
+    />
+    <Card
+      colSpan="lg:col-span-1"
+      rowSpan="md:row-span-1"
+      title="GuitarLA"
+      href="https://sazarguitarla.netlify.app/"
+    />
+    <Card
+      colSpan="lg:col-span-1"
+      rowSpan="md:row-span-1"
+      title="AstroType"
+      href="https://astrotype.netlify.app/"
+    />
+    <Card
+      colSpan="lg:col-span-1"
+      rowSpan="md:row-span-1"
+      title="What to Do?"
+      href="https://github.com/CerberusProgrammer/what_to_do"
+    />
+    <Card
+      colSpan="lg:col-span-1"
+      rowSpan="md:row-span-1"
+      title="Mini Store"
+      href="https://github.com/CerberusProgrammer/mini_store"
+    />
+    <Card
+      colSpan="lg:col-span-1"
+      rowSpan="md:row-span-1"
+      title="Atomap"
+      href="https://atomap.netlify.app/"
+    />
+    <Card
+      colSpan="lg:col-span-3"
+      rowSpan="md:row-span-1"
+      title="GMTrips"
+      body="Web App con autenticacion y API para generar costo de rutas en Baja California."
+      href="https://gmtrips.netlify.app/"
+    />
+  </main>
 </Layout>
